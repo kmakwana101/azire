@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+// import sogo from './logo.svg';
 import './App.css';
+// import Footer from './components/Footer';
+// import Header from './components/Header';
+import {Route,Routes,BrowserRouter} from "react-router-dom"
+import Home from './components/Home1';
+import FAQs from './components/FAQs';
+import Terms from './components/Terms';
+import Privacy from './components/Privacy';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/' element={<Home/>} /> 
+        <Route exact path='/FAQs' element={<FAQs/>} />
+        <Route exact path='/Terms' element={<Terms/>} />
+        <Route exact path='/Privacy' element={<Privacy/>} />
+        <Route exact path='/Contact' element={<Contact/>} />
+      </Routes>
+    </BrowserRouter>
+    </>
+  );  
 }
 
 export default App;
