@@ -955,6 +955,9 @@ footer .icon i:hover {
   background: black;
   color: white;
 }
+footer ul li a:hover {
+  color: #F63854;
+}
 footer ul {
   line-height: 34px;
   margin: 0;
@@ -968,9 +971,7 @@ footer ul li a {
   color: #666666;
   transition: 0.3s;
 }
-footer ul li a:hover {
-  color: #F63854;
-}
+
 footer .p-policy {
   color: #F63854;
 }

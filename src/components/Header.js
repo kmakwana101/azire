@@ -124,7 +124,7 @@ const Header = (props) => {
             className="fa-brands fa-dropbox color me-2 "
             style={{ fontSize: 35 }}
           />
-          <h4 className="color">Azire</h4>
+          <h4 className="color mb-0">Azire</h4>
         </Link>{" "}
         <Link className="closebtn" onClick={closeNav}>
           <i
